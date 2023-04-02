@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido utilizando a seguinte tecnologia:
 
 ## :zap: Como usar
 
-- Faça um clone desse repositório: `git clone https://github.com/CharlesrRamos/rickAndMorty.git`
+- Faça um clone desse repositório: `https://github.com/CharlesrRamos/rickAndMorty.git`
 - Instale as dependências: `yarn` ou `npm install`
 - Inicie a aplicação:
   - Rode o comando de inicialização: `yarn dev`
