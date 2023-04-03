@@ -1,5 +1,5 @@
 import React from "react";
-import { getCharacter, getCharacters } from "../../services";
+import { getCharacter, getInfoCharacters } from "../../services";
 import styled from "styled-components";
 
 export default function ({ params }) {
