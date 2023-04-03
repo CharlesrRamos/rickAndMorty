@@ -37,11 +37,13 @@ export default function ({ params }) {
   );
 }
 
-export async function getStaticPaths() {
-  const data = await getCharacters();
+export async function getStaticPaths(context) {
+  const data = await getInfoCharacters();
 
-  var paths = data.map((item) => {
-    return { params: { id: String(item.id) } };
+  var dataIds = Array.from(Array(data.count + 1).keys()).slice(1);
+
+  var paths = dataIds.map((item) => {
+    return { params: { id: String(item) } };
   });
 
   return {
