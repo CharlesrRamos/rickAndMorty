@@ -7,7 +7,6 @@ export default function ({ params }) {
   return (
     <Container>
       <Image src={params.image} alt={params.name} />
-      <ContainerFavorite>
         <Info>
           <h2>{params.name}</h2>
           <p>
@@ -31,8 +30,6 @@ export default function ({ params }) {
             </tbody>
           </Table>
         </Info>
-        <Button>Favoritar</Button>
-      </ContainerFavorite>
     </Container>
   );
 }
@@ -109,16 +106,6 @@ const Loader = styled.div`
   font-size: 18px;
 `;
 
-const Button = styled.button`
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #deef42;
-  color: #ffffff;
-`;
 
-const ContainerFavorite = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+
+
